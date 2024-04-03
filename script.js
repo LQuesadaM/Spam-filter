@@ -1,3 +1,10 @@
 const messageInput = document.getElementById("message-input");
 const checkMessageButton = document.getElementById("check-message-btn");
 const result = document.getElementById("result");
+
+checkMessageButton.addEventListener("click", () => {
+  if (messageInput.value === "") {
+    alert("Please enter a message.");
+    return
+  }
+});
